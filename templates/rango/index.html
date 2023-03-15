@@ -8,19 +8,25 @@
 <h1>Rango says...</h1>
 <div>
 hey there partner!<br />
-<strong>{{ boldmessage }}</strong><br />
+<strong>{{ boldmessage }}</strong><br>
+
 </div>
 
 <div>
+    <br><strong>Most Liked Categories</strong>
+</div>
+
+<div>
+
 {% if categories %}
     <ul>
     {% for category in categories %}
         <li>
             <!-- {{ category.name }} -->
-            
+
                 <!-- The following line is changed to add an HTML hyperlink -->
             <a href="/rango/category/{{ category.slug }}/">{{ category.name }}</a>
-            
+
         </li>
     {% endfor %}
     </ul>
