@@ -9,7 +9,7 @@
     {% if category %}
         <h1>{{ category.name }}</h1>
         {% if pages %}
-         ul>
+        <ul>
             {% for page in pages %}
             <li><a href="{{ page.url }}">{{ page.title }}</a></li>
             {% endfor %}
